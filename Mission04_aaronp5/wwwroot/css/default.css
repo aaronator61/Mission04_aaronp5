@@ -1,0 +1,28 @@
+﻿body {
+    font-family: 'Trebuchet MS';
+    text-indent: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 150px;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+input {
+    width: 150px;
+}
+
+img {
+    width: 600px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+}
