@@ -50,5 +50,6 @@ $("#grades").click(function () {
         letterGrade = 'E'
     }
     $('#calculatedGrade').text("Final Grade: " + totalGrade.toString() + "%  " + letterGrade);
+    alert(totalGrade)
 
 })

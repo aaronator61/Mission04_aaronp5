@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+<!--ATmodel Mission04_aaronp.Models.CalculatorModel;   Don't need to have this if you put the ATusing Mission04_aaronp5....... in the viewImports'-->
+@model CalculatorModel;
+
+<h4>Grade Calculator</h4>
+<form method="post">
+    <!-- form to get the scores -->
+    <label>Assignments: </label>
+    <input id="assignments" asp-for="assignments" /><br />
+    <label>Group Project: </label>
+    <input id="groupProject" asp-for="project" /><br />
+    <label>Quizzes: </label>
+    <input id="quizzes" asp-for="quizzes" /><br />
+    <label>Midterm Exam: </label>
+    <input id="midtermExam" asp-for="midterm" /><br />
+    <label>Final Exam: </label>
+    <input id="finalExam" asp-for="final" /><br />
+    <label>Intex: </label>
+    <input id="intex" asp-for="intex" /><br /><br /><br />
+    <label id="calculatedGrade"></label><br /><br />
+    <input type="submit" value="Submit" id="grades" /><br />
+
+    <div asp-validation-summary="All"></div>
+</form>
+<script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+<script src="~/js/grades.js"></script>
