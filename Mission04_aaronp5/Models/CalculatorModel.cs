@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mission04_aaronp5.Models
 {
+    //Model for the Calculator Form
     public class CalculatorModel
     {
         [Range(0, 100, ErrorMessage = "Score must be between 0 and 100")]

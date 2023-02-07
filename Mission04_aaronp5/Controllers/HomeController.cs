@@ -14,12 +14,14 @@ namespace Mission04_aaronp5.Controllers
             return View();
         }
 
+        // Action to load the Calculator page
         [HttpGet]
         public IActionResult Calculator()
         {
             return View();
         }
 
+        //Action to post the calculator info
         [HttpPost] //Attribute that is attached to the method
         public IActionResult Calculator(CalculatorModel model)
         {
